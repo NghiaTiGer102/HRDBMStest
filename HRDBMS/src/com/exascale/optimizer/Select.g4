@@ -170,5 +170,5 @@ COLORDER : 'COLORDER' ;
 ORGANIZATION : 'ORGANIZATION' ;
 IDENTIFIER : [A-Z]([A-Z] | [0-9] | '_')* ;
 JAVACLASSNAMEIDENTIFIER : ([a-z] | [A-Z] | '_' | '$') ([a-z] | [A-Z] | [0-9] | '_' | '$')* ;
-FILEPATHIDENTIFIER : ANY ('/' ANY)* ;
+FILEPATHIDENTIFIER : ANY ('////' ANY)* ;
 ANY : . ;

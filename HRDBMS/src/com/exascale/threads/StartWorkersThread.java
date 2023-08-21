@@ -19,7 +19,7 @@ public class StartWorkersThread extends HRDBMSThread
 	{
 		try
 		{
-			final BufferedReader in = new BufferedReader(new FileReader(new File("nodes.cfg")));
+			final BufferedReader in = new BufferedReader(new FileReader(new File("/home/hrdbms/HRDBMS/HRDBMS/src/nodes.cfg")));
 			String line = in.readLine();
 			while (line != null)
 			{

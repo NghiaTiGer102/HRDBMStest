@@ -23,7 +23,7 @@ public class HParms extends Properties
 
 		final HParmsDefaults defaults = HParmsDefaults.getHParmsDefaults();
 		final HParms temp = new HParms(defaults);
-		temp.load(new BufferedReader(new FileReader("hparms")));
+		temp.load(new BufferedReader(new FileReader("/home/hrdbms/HRDBMS/HRDBMS/src/hparms")));
 		retval = temp;
 		return retval;
 	}

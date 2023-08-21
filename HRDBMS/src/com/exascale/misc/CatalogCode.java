@@ -1197,7 +1197,7 @@ public class CatalogCode
 
 	private static void createNodes() throws IOException
 	{
-		final BufferedReader nodes = new BufferedReader(new FileReader(new File("nodes.cfg")));
+		final BufferedReader nodes = new BufferedReader(new FileReader(new File("/home/hrdbms/HRDBMS/HRDBMS/src/nodes.cfg")));
 		String line = nodes.readLine();
 		int workerId = 0;
 		int coordId = -2;

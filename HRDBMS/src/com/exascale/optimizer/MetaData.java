@@ -67,7 +67,7 @@ public final class MetaData implements Serializable
 			final String dirList = HRDBMSWorker.getHParms().getProperty("data_directories");
 			final FastStringTokenizer tokens2 = new FastStringTokenizer(dirList, ",", false);
 			numDevices = tokens2.allTokens().length;
-			final BufferedReader nodes = new BufferedReader(new FileReader(new File("nodes.cfg")));
+			final BufferedReader nodes = new BufferedReader(new FileReader(new File("/home/hrdbms/HRDBMS/HRDBMS/src/nodes.cfg")));
 			String line = nodes.readLine();
 			int workerID = 0;
 			int coordID = -2;
@@ -148,7 +148,7 @@ public final class MetaData implements Serializable
 				{
 					if (nodeTable.size() == 0)
 					{
-						final BufferedReader nodes = new BufferedReader(new FileReader(new File(x + "nodes.cfg")));
+						final BufferedReader nodes = new BufferedReader(new FileReader(new File(x + "/home/hrdbms/HRDBMS/HRDBMS/src/nodes.cfg")));
 						String line = nodes.readLine();
 						int workerID = 0;
 						while (line != null)

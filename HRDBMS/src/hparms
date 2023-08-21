@@ -1,0 +1,14 @@
+data_directories=/home/hrdbms/HRDBMS/HRDBMS/data1,/home/hrdbms/HRDBMS/HRDBMS/data2,/home/hrdbms/HRDBMS/HRDBMS/data3
+log_dir=/home/hrdbms/HRDBMS/HRDBMS/log_dir
+temp_directories=/home/hrdbms/HRDBMS/HRDBMS/temp1,/home/hrdbms/HRDBMS/HRDBMS/temp2
+archive_dir=/home/hrdbms/HRDBMS/HRDBMS/archive
+java_path=/usr/lib/jvm/java-8-oracle/bin
+max_open_files=65536
+Xmx_string=10g
+jvm_args=-XX:+UseG1GC -XX:G1HeapRegionSize=2m -XX:+ParallelRefProcEnabled -XX:MaxDirectMemorySize=27772160000 -XX:+AggressiveOpts -XX:CompileThreshold=200 -Xbatch -XX:-TieredCompilation
+worker_debug_jvm_args=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5015
+coordinator_debug_jvm_args=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5010
+package_classpath=/home/hrdbms/HRDBMS/HRDBMS/build/HRDBMS.jar
+ssh_args=-o StrictHostKeyChecking=no
+pbpe_version=2
+max_pbpe_time=60000

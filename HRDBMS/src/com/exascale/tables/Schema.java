@@ -4060,7 +4060,7 @@ public class Schema
 		{
 			// InputStream in =
 			// CVarcharFV.class.getResourceAsStream("/com/exascale/huffman/huffman.dat");
-			final InputStream in = new FileInputStream("huffman.dat");
+			final InputStream in = new FileInputStream("/home/hrdbms/HRDBMS/HRDBMS/src/huffman.dat");
 			ByteBuffer bb = ByteBuffer.allocate(NUM_SYM * 4);
 			in.read(bb.array());
 			int i = 0;
